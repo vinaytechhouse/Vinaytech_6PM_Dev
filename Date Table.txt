@@ -1,8 +1,8 @@
 DimDate=
 ADDCOLUMNS 
 (
-CALENDAR (DATE(2017,1,1), DATE(2021,12,31)),
-"DateAsInteger", FORMAT ( [Date], "YYYYMMDD" ),
+CALENDAR (DATE(2017,1,1), DATE(2021,12,31)), --Between these dates calendar of values created
+"DateAsInteger", FORMAT ( [Date], "YYYYMMDD" ), --Changing format to this
 "Year", YEAR ( [Date] ),
 "Day",DAY([Date]),
 "Monthnumber", FORMAT ( [Date], "MM" ),
